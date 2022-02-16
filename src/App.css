@@ -1,0 +1,27 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.App {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #19a1ae;
+  min-height: 100vh;
+  padding: 0 24px 0 25px;
+
+  background-image: url("./bg-pattern-top.svg"), url("./bg-pattern-bottom.svg");
+  background-repeat: no-repeat;
+  background-position: top -70vh left -20vw, bottom -90vh right -15vw;
+  /* background-size: contain; */
+
+  font-family: "Kumbh Sans", sans-serif;
+}
+
+@media only screen and (max-width: 400px) {
+  .App {
+    background-position: top -100vh left -195vw, bottom -93vh right -200vw;
+  }
+}
